@@ -1,0 +1,34 @@
+@charset "utf-8";
+body,p,ul,ol,li,dl,dt,dd,input,h1,h2,h3,h4,h5,h6,form,input,figure,figcaption,textarea,select{
+	margin: 0;
+	padding: 0;
+}
+div,section,article,nav,aside,header,footer,main,p{
+	box-sizing: border-box;
+}
+input,select{
+	outline: none;
+	border: 0;
+}
+*{
+    color:#333;
+}
+ul,ol,li{
+	list-style: none;
+}
+img{
+	vertical-align: bottom;
+}
+a,u{
+	text-decoration: none;
+}
+b,strong{
+	font-weight: normal;
+}
+i,em{
+	font-style: normal;
+}
+section,article,aside,nav,header,footer,mian{
+	display: block;
+}
+
