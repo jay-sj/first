@@ -1,0 +1,146 @@
+/* 放大镜部分 */
+.one {
+    width: 458px;
+    height: 458px;
+    border: 1px solid red;
+    position: relative;
+}
+
+.one span {
+    width: 175px;
+    height: 175px;
+    position: absolute;
+    border: 1px solid #AFAFAF;
+    top: 0;
+    left: 0;
+    display: none
+}
+
+.one:hover span {
+    display: block;
+    /* background-image: url(../images/big.jpg); */
+    background: transparent;
+}
+
+.wai {
+    float: left;
+    position: relative;
+}
+
+.two {
+    padding: 30px 0 0 50px;
+}
+
+.two img {
+    border: 1px solid #ccc;
+}
+
+.two .active {
+    border: 1px solid red;
+}
+
+.two img:hover {
+    border: 1px solid red;
+    
+}
+
+.the {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 480px;
+    top: 0;
+    float: left;
+    overflow: hidden;
+    border: 1px solid #969696;
+    display: none;
+   
+}
+
+.the img {
+    position: absolute;
+    display: block;
+}
+
+/* 三级导航 */
+#main {
+    background: #f2f4f6;
+}
+
+.box {
+    width: 1080px;
+    margin: auto;
+    background: #ffffff;
+}
+
+.head {
+    font-size: 12px;
+    line-height: 61px;
+}
+
+.icon-arrow-right {
+    color: #999999;
+}
+
+.head a {
+    color: #999999;
+}
+.main-r-h{
+    margin-left: 20px;
+}
+.main-r-h .main-p{
+    margin: 10px 10px;
+}
+h2 .fl{
+   color: red;
+
+}
+.r-h {
+    line-height: 28px;
+}
+.r-h p{
+    float: left; 
+    font-weight: 400;
+    font-size: 20px;
+    margin-left:20px; 
+ }
+.main-r-h:after{
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    display: block;
+    content: "";
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.price-b{
+    padding: 10px 10px; 
+    width: 555px;
+    height: 60px;
+    background: red;
+}
+.price-b-t{
+    font-size: 50px;
+}
+.price-b p{
+    line-height: 60px;
+    
+    padding: 5px;
+}
+.price-b .price-b-s{
+   line-height: 20px;
+   margin:5px 10px; 
+   text-decoration:line-through;
+}
+.zk{
+    border-left:1px dotted white;
+    border-right:1px dotted white; 
+    line-height:60px;  
+}
+
+
