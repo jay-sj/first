@@ -332,7 +332,7 @@ nav>div {
 }
 
 .nav-option:hover>div {
-    display: block;
+    display: block; 
 }
 
 .nav-option-l {
