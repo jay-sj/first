@@ -3,7 +3,6 @@ body,p,ul,ol,li,dl,dt,dd,input,h1,h2,h3,h4,h5,h6,form,input,figure,figcaption,te
 	margin: 0;
 	padding: 0;
 }
-
 input,select{
 	outline: none;
 	border: 0;
