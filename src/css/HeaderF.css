@@ -331,7 +331,7 @@ nav>div {
     display: none;
 }
 
-.nav-option:hover div {
+.nav-option:hover>div {
     display: block;
 }
 
