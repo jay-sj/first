@@ -90,6 +90,13 @@
 .cost a,.cost span,.salesvolume a,.salesvolume span{
     color: #999;
 }
+.cost:hover,.salesvolume:hover{
+    border: 1px solid #ff4965;
+    color: #ff4965;
+}
+.cost:hover a,.salesvolume:hover a,.salesvolume:hover span,.cost:hover span{
+    color: #ff4965;
+}
 .sorter-right{
     width: 196px;
     float: right;
@@ -157,4 +164,53 @@
 
 
 
+
+
+#pageBox {
+    width: 1000px;
+    padding:10px 0 0 0;
+    margin: 0 auto;
+    text-align: center;
+}
+#pageBox span {
+	display:inline-block;
+	width:60px;
+    height:24px;
+    border: 1px solid #999;
+    line-height:24px;
+    border-radius: 15px/12px;
+	text-align:center;
+	color:#999;
+	background:#fff;
+}
+#pageNav {
+	display:inline-block;
+}
+#pageNav a {
+	display:inline-block;
+	width:24px;
+    height:24px;
+    margin: 0 4px;
+	line-height:24px;
+	text-align:center;
+    color:#999;
+    border: 1px solid #999;
+    border-radius:50%; 
+	text-decoration:none;
+}
+#pageNav a.active {
+	background:#ff4965;
+    color:#EFEFEF;
+    border-radius: 50%;
+}
+#pageNav a:hover{
+    color: #ff4965;
+    border-radius:50%;
+    border: 1px solid #ff4965;
+}
+#prev:hover,#next:hover{
+    cursor:pointer;
+    border: 1px solid #ff4965;
+    color: #ff506b;
+}
 
