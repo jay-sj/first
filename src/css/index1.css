@@ -46,14 +46,16 @@
     height: 30px;
     z-index: 2;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 10px;
+	width: 190px;
+    right:43%;
 }
 .banner  > ul > li {
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
+    display: none;
 }
 .banner  > ol > li {
     float: left;
@@ -69,7 +71,7 @@
 .banner  > ol > li:hover {
     cursor: pointer;
 }
-.banner  li.active {
+.banner ol li.active {
     padding: 2px;
     color: orange;
     margin-top: -4px;

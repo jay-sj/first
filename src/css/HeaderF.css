@@ -327,8 +327,10 @@ nav>div {
     position: absolute;
     top: 38px;
     left: -250px;
+    z-index: 10;
     border: 1px solid rgb(204, 202, 202);
     display: none;
+    background-color: #fff;
 }
 
 .nav-option:hover>div {
