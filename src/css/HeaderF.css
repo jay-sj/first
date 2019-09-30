@@ -331,7 +331,7 @@ nav>div {
     display: none;
 }
 
-.nav-option:hover div {
+.nav-option:hover>div {
     display: block;
 }
 
@@ -378,13 +378,103 @@ nav>div {
 
 .nav-input {
     float: right;
+    position: relative;
 }
 
-.nav-input input  {
+.nav-input input {
     width: 200px;
     height: 28px;
     border-radius: 2px;
-    margin-top:5px;
+    margin-top: 5px;
     padding: 0 5px;
-    background:#fff url(../images/图层\ 9.png) no-repeat right center;
+}
+
+.nav-input button {
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    left: 177px;
+    border: 0;
+}
+.footer-list {
+    height: 142px;
+    border-bottom: 1px solid rgb(185, 182, 182);
+    background-color: #f1f1f1;
+    padding-top: 20px;
+}
+
+.footer-list>ul {
+    width: 1080px;
+    margin: auto;
+    background-color: #f1f1f1;
+}
+
+.footer-list>ul>li {
+    height: 120px;
+    width: 114px;
+    border-right: 1px solid rgb(185, 182, 182);
+    float: left;
+    padding-left: 20px;
+}
+
+.footer-list li {
+    font-size: 14px;
+    margin: 2px 0;
+}
+
+.footer-list>ul>li>ul>:first-child {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+footer .footer-list .footer-list-img {
+    border: 0;
+    padding-top: 20px;
+    height: 100px;
+}
+
+.footer-sec {
+    background-color: #f1f1f1;
+    height: 70px;
+    border-bottom: 3px solid #ff5482;
+}
+
+.footer-sec>div {
+    background-color: #f1f1f1;
+    width: 1080px;
+    margin: auto;
+    text-align: center;
+}
+.footer-nav{
+    background-color: #555555;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+}
+.footer-nav>div{
+    background-color: #555555;
+    width: 1080px;
+    margin: auto;
+    color: #fff;
+    font-size: 12px;
+}
+.footer-nav a{
+    color: #fff;
+    margin: 10px;
+}
+.footer-th{
+    height: 148px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 13px;
+}
+.footer-th p{
+    color:rgb(133, 130, 130);
+}
+.footer-th>:nth-child(2){
+    margin:15px 0;
+}
+.footer-th>:last-child img{
+    width: 90px;
+    height: 32px;
 }
