@@ -47,10 +47,21 @@
     background-color: #f9f9f9;
     color: #999;
     font-size: 13px;
+    position: relative;
 }
 .threenav a{
     color: #999;
     font-size: 13px;
+}
+.tips{
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+.tips{
+    font-size: 13px;
+    color: #999;
+    text-decoration: underline;
 }
 .sorter{
     width: 1080px;
@@ -668,12 +679,26 @@ nav>div {
 }
 .text{
     position: absolute;
-    right: -2px;
+    right: 2px;
     bottom: 0px;
     color: #EFEFEF;
     background: #ee3753;
     display: none;
 }
 .sideBar>ul>.goTop:hover .text{
+    display: block;
+}
+.text2 a,.text a{
+    color: #EFEFEF;
+}
+.text2{
+    position: absolute;
+    right: 2px;
+    bottom: 42px;
+    color: #EFEFEF;
+    background: #ee3753;
+    display: none;
+}
+.sideBar>ul>:nth-child(3):hover .text2{
     display: block;
 }
