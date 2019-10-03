@@ -1,4 +1,4 @@
-$(function() {
+;$(function() {
     tabPage({
         pageMain: '#pageMain',
         pageNav: '#pageNav',
@@ -101,4 +101,77 @@ $(function() {
 
     }
 
+})
+;(function(){
+    var div1 = document.querySelectorAll(".nav-option-l>div");
+    var div2 = document.querySelectorAll(".nav-option-r>div");
+    for(var i=0;i<div1.length;i++){
+        div1[i].index = i;
+        div1[i].onmouseover = function(){
+            for(var j =0;j<div1.length;j++){
+                div1[j].className="";
+                div2[j].style.display="none";
+            }
+            this.className="act";
+            div2[this.index].style.display="block";
+        }
+    }
+}())
+// 侧边栏
+;$(function(){
+    /* $(".goTop").mouseover(function () {
+        $('.goTop').toggleClass('text');
+        }, function () {
+            $(".text").css({
+                display:"none"
+            });
+        }
+    ); */
+    $(".sideBar li:first").hover(function () {
+        $(".sideBar li:first").css({
+            background:"#ee3753",
+        });
+        $(".sideBar li:first span").css({
+            color:"#fff"
+        });
+    }, function () {
+        $(".sideBar li:first").css({
+            background:"#fefefe",
+            color:"#fe899b"
+        });
+        $(".sideBar li:first span").css({
+            color:"#fe899b"
+        });
+    }
+    );
+    $(".sideBar li:eq(1)").hover(function () {
+        $(".sideBar li:eq(1) span").css({
+            color:"#fff"
+        });
+        
+    }, function () {
+        $(".sideBar li:eq(1) span").css({
+            color:"#fe899b"
+        });
+    }
+    );
+    $(".sideBar li:eq(2)").hover(function () {
+        $(".sideBar li:eq(2)").css({
+            background:"#ee3753",
+            color:"#fff"
+        }).html("客服在线");
+        
+    }, function () {
+        $(".goTop").css({
+            background:"#fefefe",
+            color:"#fe899b"
+        }).html("");
+    }
+    );
+     $(function () {
+        $(".goTop").click(function(){
+            $('body,html').animate({scrollTop:0},200);
+            return false;
+        });
+    });
 })
