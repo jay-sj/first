@@ -1,4 +1,4 @@
-(function(){
+;(function(){
     var div1 = document.querySelectorAll(".nav-option-l>div");
     var div2 = document.querySelectorAll(".nav-option-r>div");
     for(var i=0;i<div1.length;i++){

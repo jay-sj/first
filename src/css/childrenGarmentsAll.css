@@ -1,3 +1,224 @@
+/* 主体 */
+.main{
+    background: #f9f9f9;
+}
+.subnav{
+    width: 1080px;
+    height: 39px;
+    margin: 0 auto;
+    box-shadow: -5px 2px 5px #d2d2d2,0 0 0 #d2d2d2,5px 2px 5px #d2d2d2,5px 2px 5px #d2d2d2;
+    background: #fff;
+}
+.subnav-left li{
+    float: left;
+    text-align: center;
+    line-height: 35px; 
+}
+.subnav-left li a{
+    color: #999;
+    margin-left:16px;
+    font-size: 13px;
+    margin-right: 16px;
+}
+.subnav-left li:hover{
+    color: #ff647c;
+    border-bottom: 3px solid #ff647c;
+}
+.subnav-right{
+    width: 196px;
+    height: 39px;
+    float: right;
+    background-color:#f7f7f7;
+    text-align: center;
+    line-height: 39px;
+}
+.subnav-right a{
+    color: #ff506b;
+}
+.subnav-right span{
+    color: #ff506b;
+}
+.threenav{
+    width: 1080px;
+    height: 88px;
+    line-height: 92px;
+    padding-left: 10px;
+    margin: 5px auto 0;
+    background-color: #f9f9f9;
+    color: #999;
+    font-size: 13px;
+    position: relative;
+}
+.threenav a{
+    color: #999;
+    font-size: 13px;
+}
+.tips{
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+.tips{
+    font-size: 13px;
+    color: #999;
+    text-decoration: underline;
+}
+.sorter{
+    width: 1080px;
+    height: 62px;
+    border: 1px solid #eeeeee;
+    background: #fff;
+    margin: 0 auto 25px;
+    overflow: hidden;
+}
+.sorter-left{
+    margin-left: 62px;
+    overflow: hidden;
+    float: left;
+}
+.synthesize{
+    width: 72px;
+    height: 25px;
+    background: #ff4965;
+    text-align: center;
+    line-height: 25px;
+    margin-top: 19px;
+    float: left;
+    margin-right: 12px;
+}
+.synthesize a,.synthesize span{
+    color: #fff;
+}
+.cost,.salesvolume{
+    width: 72px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    margin-top: 19px;
+    border: 1px solid #ddd;
+    float: left;
+    margin-right: 13px;
+}
+.cost a,.cost span,.salesvolume a,.salesvolume span{
+    color: #999;
+}
+.cost:hover,.salesvolume:hover{
+    border: 1px solid #ff4965;
+    color: #ff4965;
+}
+.cost:hover a,.salesvolume:hover a,.salesvolume:hover span,.cost:hover span{
+    color: #ff4965;
+}
+.sorter-right{
+    width: 196px;
+    float: right;
+    margin:19px 24px 0 0; 
+    font-size: 13px;
+}
+.sorter-right b{
+    color: #999;
+    margin: 0 5px;
+}
+.sorter-right span{
+    color: #ff506b;
+}
+.content{
+    width: 1080px;
+    margin: 0 auto;
+}
+.commodity{
+    width: 1080px;
+}
+.commodity:after{
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    display: block;
+    content: "";
+}
+.commodity div{
+    float: left;
+    width: 251px;
+    height: 336px;
+    background: #fff;
+    margin-right: 21px;
+    border: 1px solid #ededed;
+    margin-bottom: 20px;
+}
+.commodity p{
+    font-size: 13px;
+    padding: 10px 0 10px 8px;
+}
+.commodity span{
+    color: #ff4965;
+    font-size: 22px;
+    padding-left: 5px;
+}
+.commodity .commodity-last{
+    margin-right:0; 
+}
+.commodity b{
+    color: #999;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+.commodity u{
+    float: right;
+    padding-top: 7px;
+    color: #999;
+    font-size: 14px;
+    padding-right: 10px;
+}
+/* 分页器 */
+#pageBox {
+    width: 1000px;
+    padding:10px 0 0 0;
+    margin: 30px auto 20px;
+    text-align: center;
+}
+#pageBox span {
+	display:inline-block;
+	width:60px;
+    height:24px;
+    border: 1px solid #999;
+    line-height:24px;
+    border-radius: 15px/12px;
+	text-align:center;
+	color:#999;
+	background:#fff;
+}
+#pageNav {
+	display:inline-block;
+}
+#pageNav a {
+	display:inline-block;
+	width:24px;
+    height:24px;
+    margin: 0 4px;
+	line-height:24px;
+	text-align:center;
+    color:#999;
+    border: 1px solid #999;
+    border-radius:50%; 
+	text-decoration:none;
+}
+#pageNav a.active {
+	background:#ff4965;
+    color:#EFEFEF;
+    border-radius: 50%;
+}
+#pageNav a:hover{
+    color: #ff4965;
+    border-radius:50%;
+    border: 1px solid #ff4965;
+}
+#prev:hover,#next:hover{
+    cursor:pointer;
+    border: 1px solid #ff4965;
+    color: #ff506b;
+}
+/* 头部 */
 .beibei-warn {
     line-height: 40px;
     background-color: #fff8ef;
@@ -398,55 +619,7 @@ nav>div {
     left: 177px;
     border: 0;
 }
-.footer-list {
-    height: 142px;
-    border-bottom: 1px solid rgb(185, 182, 182);
-    background-color: #f1f1f1;
-    padding-top: 20px;
-}
-
-.footer-list>ul {
-    width: 1080px;
-    margin: auto;
-    background-color: #f1f1f1;
-}
-
-.footer-list>ul>li {
-    height: 120px;
-    width: 114px;
-    border-right: 1px solid rgb(185, 182, 182);
-    float: left;
-    padding-left: 20px;
-}
-
-.footer-list li {
-    font-size: 14px;
-    margin: 2px 0;
-}
-
-.footer-list>ul>li>ul>:first-child {
-    font-weight: bold;
-    font-size: 16px;
-}
-
-footer .footer-list .footer-list-img {
-    border: 0;
-    padding-top: 20px;
-    height: 100px;
-}
-
-.footer-sec {
-    background-color: #f1f1f1;
-    height: 70px;
-    border-bottom: 3px solid #ff5482;
-}
-
-.footer-sec>div {
-    background-color: #f1f1f1;
-    width: 1080px;
-    margin: auto;
-    text-align: center;
-}
+/* 底部 */
 .footer-nav{
     background-color: #555555;
     height: 38px;
@@ -465,7 +638,7 @@ footer .footer-list .footer-list-img {
     margin: 10px;
 }
 .footer-th{
-    height: 148px;
+    height: 100px;
     padding-top: 20px;
     text-align: center;
     font-size: 13px;
@@ -473,10 +646,59 @@ footer .footer-list .footer-list-img {
 .footer-th p{
     color:rgb(133, 130, 130);
 }
-.footer-th>:nth-child(2){
-    margin:15px 0;
+.sideBar{
+    width: 70px;
+    height: 170px;
+    position: fixed;
+    right: 140px;
+    bottom: 120px;
+    background: #fefefe;
+    text-align: center;
 }
-.footer-th>:last-child img{
-    width: 90px;
-    height: 32px;
+.sideBar ul{
+    position: relative;
+}
+.sideBar li{
+    height: 41px;
+    line-height: 41px;
+    border-top: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    width: 100%;
+}
+.sideBar>:last-child{
+    border-bottom: 1px solid #ebebeb;
+}
+.sideBar span{
+    color: #fe899b;
+    font-size: 20px;
+}
+.sideBar li:hover{
+    color: #EFEFEF;
+    background: #ee3753;
+}
+.text{
+    position: absolute;
+    right: 2px;
+    bottom: 0px;
+    color: #EFEFEF;
+    background: #ee3753;
+    display: none;
+}
+.sideBar>ul>.goTop:hover .text{
+    display: block;
+}
+.text2 a,.text a{
+    color: #EFEFEF;
+}
+.text2{
+    position: absolute;
+    right: 2px;
+    bottom: 42px;
+    color: #EFEFEF;
+    background: #ee3753;
+    display: none;
+}
+.sideBar>ul>:nth-child(3):hover .text2{
+    display: block;
 }
