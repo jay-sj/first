@@ -155,100 +155,43 @@
     });
 })
 // 懒加载
-;(function($){
-    var defaults = {
-        coverColor:"#dfdfdf",
-        coverDiv:"",
-        showTime:300,
-        offsetBottom:0,
-        offsetTopm:50,
-        onLoadBackEnd:function(index,dom){},
-        onLoadBackStart:function(index,dom){}
-    }
-    //所有待load src
-    var srcList = []
-    var lazyLoadCoutn = 0;
-    var windowHeight = $(window).height();
-    var windowWidth = $(window).width();
-    var lazyImgList = $("img[data-lazy-src]");
-    var default_base64_src ="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==";
-    //获取img
-    function getImgNaturalDimensions(src, callback,lazyLoadCoutn) {
-        var nWidth, nHeight
-        var image = new Image()
-        image.src = src;
-        image.onload = function() {
-            callback(image.width, image.height);
-            defaults.onLoadBackStart(lazyLoadCoutn,$("img[data-lazy-src]:eq("+lazyLoadCoutn+")"));
-        }
-        return [nWidth, nHeight];
-    }
-    function showImg(lazyLoadCoutn,callback){
-        var src =  lazyImgList.eq(lazyLoadCoutn).attr("data-lazy-src")
-        getImgNaturalDimensions(src, function () {
-            try {
-            meng($("img[data-lazy-src]:eq("+lazyLoadCoutn+")") ,lazyLoadCoutn,callback)
-                }catch(error) {
-                }
-        },lazyLoadCoutn)
-    }
-    function meng(jDom,lazyLoadCoutn,callback){
-        if(jDom.attr("data-comp")){
-            return;
-        }
-        jDom.css("visibility","hidden");
-        jDom.attr("src",jDom.attr("data-lazy-src"))
-        var w = jDom.width();
-        var h = jDom.height();
-        var offsetTop = jDom.offset().top;
-        var offsetLeft = jDom.offset().left;
-        jDom.css("visibility","visible");
-        $("body").append("<div class='meng-lazy-div"+lazyLoadCoutn+"' style='background-color: "+defaults.coverColor+";position:absolute;width:"+w+"px;height:"+h+"px;top:"+offsetTop+"px;left:"+offsetLeft+"px;z-index:500'>"+defaults.coverDiv+"</div>");
-        noneM(lazyLoadCoutn,callback,jDom);
-        jDom.attr("data-comp","true");
-    }
-    function noneM(lazyLoadCoutn,callback,jDom){
-        if(true){
-            $(".meng-lazy-div"+lazyLoadCoutn).animate({opacity:"0"},defaults.showTime,function(){
-               $(this).remove();
-                defaults.onLoadBackEnd(lazyLoadCoutn,jDom)
-                callback();
-            });
-        }
-    }
-    function checkOffset(){
-        var scrollTop = $(document).scrollTop();
-        var onlazyList = [];
-        lazyImgList.each(function(index){
-            var dom = $(this);
-            if(!dom.attr("data-comp")){
-                if(dom.offset().top-scrollTop+defaults.offsetTopm>=0&&dom.offset().top-scrollTop<(windowHeight+defaults.offsetBottom)){
-                    onlazyList.push(index);
-                }
+; (function () {
+    $(window).scroll(function () {//窗口滚动的时候（鼠标滚轮的时候。。）
+        $('img').each(function () {//把以下的方法作用到每一个img标签，可自行加限定条件
+            var $imgSrc = $(this).attr('data-src');//获取每张图片对应地址
+            var $imgTop = $(this).offset().top;//获取每张图片对应距离document顶部的高度
+            var scrollT = $(window).scrollTop();//获取滚轮滚动的距离
+            var halfDoc = $(window).height();//获取浏览器窗口可视高度
+            var ifElse = (scrollT + halfDoc) >= $imgTop;//如果滚动距离加上窗口可视高度大于该图片距离document顶部的高度
+            var _this = this;//保存this的作用域以便于在其它作用域上使用这个作用域
+            if (ifElse) {//如果条件成立
+                setTimeout(function () { $(_this).attr('src', $imgSrc); }, 200);//把图片的src地址改成data-src的值（前面已经获取了）
             }
-        })
-        if(onlazyList.length!=0){
-            showImg(onlazyList[0],function(){
-                checkOffset();
-            });
+        })//end object 'img'
+    })//end object window
+    $(document).trigger("scroll");
+}())
+// 点击显示/隐藏
+;$(function(){
+    $(".more").click(function(){
+       if($(".classify").height()==156){
+        $(".classify").css({height:251});
+        $(".hiddenPart").css({display:"block"});
+        $(".moreUnfold").html("收起")
+       }else if($(".classify").height()==251){
+        $(".classify").css({height:156});
+        $(".hiddenPart").css({display:"none"});
+        $(".moreUnfold").html("更多")
+       }
+    });
+})
+; (function () {
+    $(document).scroll(function () {
+        if ($(document).scrollTop() > 170) {
+            $(".beibei-top")[0].style.display = "block";
+        } else {
+            $(".beibei-top")[0].style.display = "none";
         }
-    }
-    function range(){
-        checkOffset();
-    }
-    function init(setting){
-        defaults = $.extend(defaults,setting);
-        lazyImgList.each(function(){
-            var sr = $(this).attr("data-lazy-src");
-            srcList.push(sr);
-
-            $(this).attr("src",default_base64_src);
-        });
-        range();
-        window.onscroll=function(){
-            range()
-        }
-    }
-    window.lazyLoadInit = init;
-})($);
-lazyLoadInit();
+    })
+    $(document).trigger("scroll");
+}())
