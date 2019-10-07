@@ -224,3 +224,117 @@
 .sidebar-fo:hover div{
     display:block;
 }
+.main-z>div{
+    width: 1080px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.main-l{
+    width: 830px;
+    float: left;
+}
+.main-title>h3{
+    font-size: 22px;
+    float: left;
+    color:#666;
+}
+.main-title>p{
+    font-size: 20px;
+    float: right;
+    color:#666;
+}
+.main-title>span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 5px;
+    height: 5px;
+    background: #666;
+    margin: 0 5px;
+}
+.main-r{
+    width: 250px;
+    float: right;
+}
+.main-title{
+    height: 42px;
+    line-height: 42px;
+    width: 260px;
+}
+.commodity{
+    width: 830px;
+}
+.commodity:after{
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    display: block;
+    content: "";
+}
+.commodity div{
+    float: left;
+    width: 251px;
+    height: 336px;
+    background: #fff;
+    margin-right: 21px;
+    border: 1px solid #ededed;
+    margin-bottom: 20px;
+}
+.commodity p{
+    font-size: 13px;
+    padding: 10px 0 10px 8px;
+}
+.commodity span{
+    color: #ff4965;
+    font-size: 22px;
+    padding-left: 5px;
+}
+.commodity .commodity-last{
+    margin-right:0; 
+}
+.commodity b{
+    color: #999;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+.commodity u{
+    float: right;
+    padding-top: 7px;
+    color: #999;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main:last-child{
+    width: 100%;
+}
+main:last-child>img{
+    width: 100%;
+}
