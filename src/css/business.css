@@ -1,0 +1,119 @@
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clr:after{
+    content: "";
+    height: 0;
+    display: block;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+.service {
+    background: url(../images/图层\ 2.png) no-repeat left center, url(../images/图层\ 3.png) no-repeat right center;
+    padding: 0 13px;
+    position: relative;
+}
+
+.service ul {
+    display: none;
+    position: absolute;
+    top: 4px;
+    right: -8px;
+    width: 75px;
+    height: 40px;
+    padding: 0 6px;
+    background-color: rgba(255, 255, 255, 0.938);
+    border: 1px solid #999;
+
+}
+
+.service li {
+    line-height: 20px;
+    margin: 0;
+    float: none;
+}
+
+.service-f {
+    background: url(../images/图层\ 2.png) no-repeat left center, url(../images/图层\ 3.png) no-repeat 64px center;
+    padding: 0 13px;
+}
+
+.service-s {
+    background: url(../images/kefu.png) no-repeat left center;
+    padding-left: 13px;
+}
+
+.service:hover ul {
+    display: block;
+}
+
+.follow {
+    background: url(../images/图层\ 3.png) no-repeat right center;
+    padding-right: 13px;
+    position: relative;
+}
+
+.follow div {
+    display: none;
+    position: absolute;
+    top: 24px;
+    right: -78px;
+    border: 1px solid #999;
+    z-index: 20;
+}
+
+.follow:hover div {
+    display: block;
+}
+.business-top{
+    line-height: 30px;
+    font-size: 12px;
+    background-color: #f4f4f4;
+    padding-right: 100px;
+}
+.business-top>ul>li{
+    float: left;
+    margin: 0 10px;
+}
+.business-top a:hover {
+    text-decoration: underline;
+}
+header{
+    height: 83px;
+    line-height: 83px;
+    width: 100%;
+}
+header>div{
+    width: 1040px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header img{
+    height: 80px;
+}
+header>div>div>div{
+    font-size: 28px;
+    color: #FF4965;
+}
+#business-list>li{
+    padding: 0 30px;
+    font-size: 16px;
+    color: #36435C;
+    font-weight: 700;
+    float: left;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+}
+#business-list>li.active-bu{
+    border-bottom: 3px solid #FF4965;
+}
+main img{
+    width: 100%;
+}
+main div{
+    display: none;
+}
