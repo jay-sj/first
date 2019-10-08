@@ -5,101 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>我的订单</title>
+    <title>设置密码</title>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/HeaderF.css">
     <link rel="stylesheet" href="../iconfont/iconfont.css">
     <link rel="stylesheet" href="../css/personal.css">
     <link rel="stylesheet" href="../iconfont/personal/iconfont.css">
     <style>
-        .my-order a {
-            color: #FF5482;
-            font-weight: 700;
-            border-left: 3px solid #FF5482;
-        }
-
-        .list-rg {
-            width: 800px;
-            padding: 20px 0px;
-            float: left;
-        }
-
-        .list-nav {
-            margin: 0 20px 0 0;
+        .box-fr form {
+            margin: 20px 20px 20px 10px;
             font-size: 14px;
-            border-bottom: 2px solid #ff5482;
-            list-style: none;
-            overflow: hidden;
         }
 
-        .list-nav li {
-            float: left;
-            display: block;
-            padding: 6px 20px;
-            color: #333;
-            border: 1px solid #ddd;
-            border-right: none;
-            border-bottom: none;
-            cursor: pointer;
-            background: #f4f4f4;
+        .box-fr form input {
+            border: 1px solid #ccc;
+            box-shadow: inset 0 1px 3px #ddd;
+            border-radius: 2px;
+            padding: .5em .6em;
         }
-
-        .list-nav .active {
-            font-weight: 700;
-            border-color: #ff5482;
-            background: #ff5482;
-            color: #fff;
+        .pwd-1,.pwd-2 {
+            margin-bottom: 15px;
         }
-
-        .list-bo {
-            width: 780px;
-        }
-
-        .list-bo li {
-            list-style: none;
+        .box-fr form label {
             display: inline-block;
-            color: #333;
-            font-size: 14px;
-            font-weight: 400;
-            height: 37px;
-            line-height: 37px;
-            text-align: center;
-            float: left;
+            width: 140px;
         }
-
-        .list-bo .info {
-            width: 300px;
+        .save {
+            margin: 1.5em 0 0 10em;
         }
-
-        .list-bo .price {
-            width: 100px;
-        }
-
-        .list-bo .aftersale {
-            width: 50px;
-        }
-
-        .list-bo .num {
-            width: 45px;
-        }
-
-        .list-bo .sub {
-            width: 90px;
-        }
-
-        .list-bo .status {
-            width: 95px;
-        }
-
-        .list-bo .play {
-            width: 95px;
-        }
-
-        .null {
-            margin-top: 85px;
-            text-align: center;
-            color: #aaa;
-        }
+        .save button {
+            padding: 6px 17px;
+    background: #ff4965;
+    border-radius: 2px;
+    color: #fff;
+    border: 1px solid #ff4965;
+    text-shadow: 0 -1px 0 #ff4965;
+    font-size: 13px;
+        }   
     </style>
 </head>
 
@@ -121,7 +63,7 @@
                 <li class="rsg"><span>|</span></li>
                 <li><a href="./business.html">消息</a></li>
                 <li class="rsg"><span>|</span></li>
-                <li><a href="./business.html">我的订单</a></li>
+                <li><a href="./my-order.html">我的订单</a></li>
                 <li class="rsg"><span>|</span></li>
                 <li><a href="./business.html">我的贝贝</a></li>
                 <li class="rsg"><span>|</span></li>
@@ -777,7 +719,7 @@
             <div class="list-fl">
                 <h5>我的交易</h5>
                 <ul>
-                    <li class="my-order"><a href=""><i class="iconfont"></i>我的订单</a></li>
+                    <li><a href="./my-order.html"><i class="iconfont"></i>我的订单</a></li>
                     <li><a href="./cash-coupon.html">我的现金券</a></li>
                     <li><a href="">我的收藏</a></li>
                     <li><a href="">我的售后</a></li>
@@ -789,7 +731,7 @@
                     <li><a href="">我的收货地址</a></li>
                     <li><a href="">安全中心</a></li>
                     <li><a href="">我的提现</a></li>
-                    <li><a href="">修改密码</a></li>
+                    <li><a href="../html/pwd.html">修改密码</a></li>
                     <li><a href="">账号绑定</a></li>
                     <li><a href="">早教主播后台</a></li>
                 </ul>
@@ -797,61 +739,59 @@
                 <li><a href="">我的消息</a></li>
             </div>
             <!-- 右侧内容 -->
-            <ul class="list-rg">
-                <ul class="list-nav">
-                    <li class="active">全部</li>
-                    <li>代付款</li>
-                    <li>待发货</li>
-                    <li>待收货</li>
-                    <li>待评价</li>
-                    <li>待返现</li>
-                </ul>
-                <ul class="list-bo">
-                    <li class="info">商品</li>
-                    <li class="price">单价</li>
-                    <li class="num">数量</li>
-                    <li class="aftersale">维权</li>
-                    <li class="sub">总计</li>
-                    <li class="status">订单状态</li>
-                    <li class="play">操作</li>
-                </ul>
-                <div class="null">
-                    暂无订单记录
+            <div class="box-fr">
+                <h3>设置密码</h3>
+                <form action="">
+                    <div class="pwd-1">
+                        <label for="">
+                            请输出新密码 *
+                        </label>
+                        <input type="text">
+                    </div>
+                    <div class="pwd-2">
+                        <label for="">
+                            请再次输出新密码 *
+                        </label>
+                        <input type="password">
+                    </div>
+                </form>
+                <div class="save">
+                    <button>保存设置</button>
                 </div>
+            </div>
         </div>
+    </div>
+    <!-- 返回顶部 -->
+    <div class="sidebar">
+        <ul>
+            <li class="sidebar-f">
+                <a href="./shoppingcar.html
+                "><span class="iconfont icon-htmal5icon29"></span></a>
+                <div class="right-div">
+                    <div class="right-div-a">赶快去挑选商品吧！</div>
+                    <div class="right-div-b">
+                        <div>小计 <i>￥0.00</i></div>
+                        <div><a href="./shoppingcar.html">去购物车结算</a></div>
+                    </div>
+                </div>
+            </li>
 
+            <li class="sidebar-s">
+                <span class="iconfont icon-shouji"></span>
+                <div>
+                    <p>下载手机APP <br> 随时随地看上新</p>
+                    <img src="../images/beibeiclub_90.png" alt="">
+                </div>
+            </li>
+            <li class="sidebar-t"><span class="iconfont icon-custom-service"></span>
+                <div>客服在线</div>
+            </li>
+            <li class="sidebar-back sidebar-fo"><span class="iconfont icon-iconfonticonfonti2copy"></span>
+                <div>回到顶部</div>
+            </li>
+        </ul>
     </div>
-    </div>
-     <!-- 返回顶部 -->
-     <div class="sidebar">
-            <ul>
-                <li class="sidebar-f">
-                    <a href="./shoppingcar.html
-                    "><span class="iconfont icon-htmal5icon29"></span></a>
-                    <div class="right-div">
-                        <div class="right-div-a">赶快去挑选商品吧！</div>
-                        <div class="right-div-b">
-                            <div>小计 <i>￥0.00</i></div>
-                            <div><a href="./shoppingcar.html">去购物车结算</a></div>
-                        </div>
-                    </div>
-                </li>
-    
-                <li class="sidebar-s">
-                    <span class="iconfont icon-shouji"></span>
-                    <div>
-                        <p>下载手机APP <br> 随时随地看上新</p>
-                        <img src="../images/beibeiclub_90.png" alt="">
-                    </div>
-                </li>
-                <li class="sidebar-t"><span class="iconfont icon-custom-service"></span>
-                    <div>客服在线</div>
-                </li>
-                <li class="sidebar-back sidebar-fo"><span class="iconfont icon-iconfonticonfonti2copy"></span>
-                    <div>回到顶部</div>
-                </li>
-            </ul>
-        </div>
+
     <footer>
         <div class="footer-nav">
             <div>
@@ -890,38 +830,38 @@
             </p>
         </div>
     </footer>
-    <script src="../js/jquery.js"></script>
     <script src="../js/HeaderF.js"></script>
+    <script src="../js/jquery.js"></script>
     <script>
-            (function () {
-                $(window).scroll(function () { //窗口滚动的时候（鼠标滚轮的时候。。）
-                    $('img').each(function () { //把以下的方法作用到每一个img标签，可自行加限定条件
-                        var $imgSrc = $(this).attr('data-src'); //获取每张图片对应地址
-                        var $imgTop = $(this).offset().top; //获取每张图片对应距离document顶部的高度
-                        var scrollT = $(window).scrollTop(); //获取滚轮滚动的距离
-                        var halfDoc = $(window).height(); //获取浏览器窗口可视高度
-                        var ifElse = (scrollT + halfDoc) >=
+        (function () {
+            $(window).scroll(function () { //窗口滚动的时候（鼠标滚轮的时候。。）
+                $('img').each(function () { //把以下的方法作用到每一个img标签，可自行加限定条件
+                    var $imgSrc = $(this).attr('data-src'); //获取每张图片对应地址
+                    var $imgTop = $(this).offset().top; //获取每张图片对应距离document顶部的高度
+                    var scrollT = $(window).scrollTop(); //获取滚轮滚动的距离
+                    var halfDoc = $(window).height(); //获取浏览器窗口可视高度
+                    var ifElse = (scrollT + halfDoc) >=
                         $imgTop; //如果滚动距离加上窗口可视高度大于该图片距离document顶部的高度
-                        var _this = this; //保存this的作用域以便于在其它作用域上使用这个作用域
-                        if (ifElse) { //如果条件成立
-                            setTimeout(function () {
-                                $(_this).attr('src', $imgSrc);
-                            }, 1000); //把图片的src地址改成data-src的值（前面已经获取了）
-                        }
-                    }) //end object 'img'
-                }) //end object window
-                $(document).trigger("scroll");
-            }());
-            (function () {
-                $(".sidebar-back").click(function () {
-                    $('body,html').animate({
-                            scrollTop: 0
-                        },
-                        500);
-                    return false;
-                });
-            }());
-        </script>
+                    var _this = this; //保存this的作用域以便于在其它作用域上使用这个作用域
+                    if (ifElse) { //如果条件成立
+                        setTimeout(function () {
+                            $(_this).attr('src', $imgSrc);
+                        }, 1000); //把图片的src地址改成data-src的值（前面已经获取了）
+                    }
+                }) //end object 'img'
+            }) //end object window
+            $(document).trigger("scroll");
+        }());
+        (function () {
+            $(".sidebar-back").click(function () {
+                $('body,html').animate({
+                        scrollTop: 0
+                    },
+                    500);
+                return false;
+            });
+        }());
+    </script>
 </body>
 
 </html>
