@@ -251,4 +251,4 @@
                 scrollTop :$(".dian").eq(index).offset().top 
             },200);
         });
-      });
+      }());
