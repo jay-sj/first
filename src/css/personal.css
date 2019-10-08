@@ -8,14 +8,20 @@ a{
 ul,li{
     list-style: none;
 }
+.main {
+    background: #F2F4F6;
+}
 .wrap {
     margin: 20px auto;
     width: 1200px;
     border: 1px solid #e4e4e4;
     overflow: hidden;
+    background: white;
 }
+/* 左侧列表 */
 .list-fl {
     width: 200px;
+    float: left;
 }
 h5{
     height: 20px;
@@ -40,4 +46,204 @@ h5{
     height: 24px;
     line-height: 24px;
     border-left: 3px solid #fff;
+}
+.list-fl li a:hover{
+    color: #FF5482
+}
+/* 右侧内容 */
+.box-fr{
+    float: left;
+    width: 800px;
+    padding: 20px 0;
+}
+.box-fr h3{
+    margin: 0 20px 0 0;
+    padding: 0 0 6px 10px;
+    font-size: 18px;
+    border-bottom: 2px solid #ff5482;
+}
+.content {
+    margin-top: 20px;
+}
+/* 提示 */
+.help {
+    margin: 0 25px 15px 5px;
+    padding: 5px 10px;
+    background-color: #ffffe0;
+    border: 1px solid #f9dfb2;
+    color: #d4a639;
+    font-size: 14px;
+}
+.help .red {
+    color: #FF5482; 
+}
+/* 欢迎登录 */
+.content-center {
+    width: 545.46px;
+    margin-right: 10px;
+}
+.welcome {
+    background: #f9f9f9;
+    margin: 0 0 10px;
+    padding: 0 25px 15px;
+    height: 110px;
+    position: relative;
+}
+.welcome-head {
+    height: 80px;
+    position: relative;
+}
+.ps-le{
+    position: absolute;
+    top: 30px;
+    left: 65px;
+    font-size: 16px;
+}
+.ps-ri{
+    position: absolute;
+    top: 35px;
+    right: 0;
+    text-align: right;
+    font-size: 13px;
+}
+.ps-ri a{
+    color: #595959;
+}
+.jay {
+    /* border-radius: 50%; */
+    /* border: 2px solid; */
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 28px;
+    left: -10px;
+}
+.jay img {
+    width: 100%;
+    
+}
+.welcome-foot {
+    font-size: 13px;
+    margin: 0 0 0 65px;
+    position: relative;
+}
+/* 安全等级 */
+.big-box{
+    display: inline-block;
+    width: 150px;
+    background: #ccc;
+    height: 16px;
+    border-radius: 10px;
+    vertical-align: middle;
+    margin: -2px 10px 0;
+    position: relative;
+}
+.yellow-box{
+    display: inline-block;
+    height: 16px;
+    width: 0;
+    position: absolute;
+    border-radius: 10px;
+    left: 0;
+    top: 0;
+    width: 100px;
+    background: #ff923a;
+}
+.yellow-txt{
+    color: #ff923a;
+    font-size: 13px;
+    font-weight: 700;
+}
+.blue-txt{
+    color: #0B5BA5;
+    font-size: 13px;
+}
+.pwd-big{
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    font-size: 13px;
+}
+.pwd{
+    text-align: right;
+    font-size: 13px;
+    color: #9a9a9a;
+    margin-left: 10px;
+}
+.under{
+    color: #777;
+    text-decoration: underline;
+    font-size: 14px;
+}
+/* 我的钱包 */
+.my-wallet {
+    border: 1px dashed silver;
+    margin: 0 0 10px;
+}
+.title1{
+    display: inline-block;
+    width: 120px;
+    line-height: 80px;
+    font-size: 18px;
+    border-right: 1px dashed silver;
+    color: #333;
+    font-weight: 150;
+    text-align: center;
+}
+.title1-right{
+    display: inline-block;
+    width: 330px;
+    padding: 0 40px 10px;
+    line-height: 40px;
+    color: #5a5a5a;
+}
+.red-txt{
+    color: #FF5482;
+}
+.extract{
+    padding: 6px 17px;
+    background: #ff4965;
+    border-radius: 2px;
+    color: #fff;
+    border: 1px solid #ff4965;
+    text-shadow: 0 -1px 0 #ff4965;
+    font-size: 13px;
+}
+.balance{
+    margin-right: 15px;
+}
+/* 我的订单 */
+.my-order{
+    height: 120px;
+    margin: 0 0 10px;
+}
+/* 代付款 */
+.date{
+    width: auto;
+    line-height: 30px;
+    padding: 15px 10px;
+    position: relative;
+    top: 5px;
+}
+.date a{
+    display: inline-block;
+    width: 77px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin: 0;
+    position: relative;
+    text-align: center;
+}
+.date a i{
+    font-size: 30px;
+    color: #ccc;
+}
+.date a span{
+    display: block;
+    color: #888;
+    font-size: 14px;
+}
+.footer-nav{
+    border-top: 3px solid #FF5482;
 }
