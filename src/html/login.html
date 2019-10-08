@@ -33,7 +33,7 @@
                         <form action="">
                             <label for="" class="label">
                                 <span class="small-img"></span>
-                                <input onchange="if(/[^\w]/ig.test(this.value)){alert('请输入正确的手机号或邮箱');this.value='';}"
+                                <input id="username" 
                                     type="text" class="phone" placeholder="您的手机号 / 邮箱">
                             </label>
                         </form>
@@ -59,7 +59,7 @@
                         <a href="" class="red" id="login">忘记密码</a>
                     </div>
                     <!-- 登录 -->
-                    <a href="" class="next">登录</a>
+                    <a href="javascript:;" name="Submit" class="next" onClick="checkLogon()">登录</a>
                     <!-- 快捷登录 -->
                     <div class="fast">
                         <span>快捷登录方式：</span>
@@ -104,33 +104,22 @@
             })
         })
         // 登录验证
-        function check_login() {
-            var name = $("#user_name").val();
-            var pass = $("#password").val();
-            if (name == "admin" && pass == "admin") {
-                alert("登录成功！");
-                // window.location.href = "http://www.baidu.com";
-                $("#user_name").val("");
-                $("#password").val("");
-
+        function checkLogon() {
+            var name = document.getElementById("username").value;
+            var pass = document.getElementById("password").value;
+            //判断非空
+            if ((name == null || name == "") || (pass == null || pass == "")) {
+                alert("用户名或密码不能为空！！");
+            } else {
+                if (name == "123" && pass == "123") {
+                    alert("登录成功！");
+                    //这里写你页面跳转的语句
+                    window.location.href = "../html/personal.html";
+                } else {
+                    alert("用户名或密码错误！！");
+                }
             }
         }
-
-        // function check_register() {
-        //     var name = $("#r_user_name").val();
-        //     var pass = $("#r_password").val();
-        //     var email = $("r_email").val();
-        //     if (name != "" && pass == "" && email != "") {
-        //         alert("注册成功！");
-        //         $("#user_name").val("");
-        //         $("#password").val("");
-        //     } else {
-        //         $("#login_form").removeClass('shake_effect');
-        //         setTimeout(function () {
-        //             $("#login_form").addClass('shake_effect')
-        //         }, 1);
-        //     }
-        // }
     </script>
 </body>
 
