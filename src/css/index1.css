@@ -31,33 +31,38 @@
     position: relative;
     overflow: hidden;
 }
+
 .banner img {
     width: 1400px;
     height: 320px;
     display: block;
     width: 100%;
 }
+
 .banner ul {
     height: 250px;
     z-index: 1;
     position: relative;
 }
-.banner  ol {
+
+.banner ol {
     height: 30px;
     z-index: 2;
     position: absolute;
     bottom: 10px;
-	width: 190px;
-    right:43%;
+    width: 190px;
+    right: 43%;
 }
-.banner  > ul > li {
+
+.banner>ul>li {
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     display: none;
 }
-.banner  > ol > li {
+
+.banner>ol>li {
     float: left;
     width: 20px;
     height: 20px;
@@ -68,12 +73,369 @@
     margin-right: 5px;
     background: Gray;
 }
-.banner  > ol > li:hover {
+
+.banner>ol>li:hover {
     cursor: pointer;
 }
+
 .banner ol li.active {
     padding: 2px;
     color: orange;
     margin-top: -4px;
     border: 1px solid orange;
+}
+
+.beibei-top {
+    height: 32px;
+    line-height: 32px;
+    background-color: #F9F9F9;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    z-index: 50;
+}
+
+.beibei-top>div {
+    width: 960px;
+    margin: auto;
+    padding-left: 120px;
+    position: relative;
+}
+
+.beibei-top>div>span {
+    display: block;
+    width: 100px;
+    height: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background: #FF3F69 url(../images/图层11.png) no-repeat center center;
+    background-size: 50px 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.beibei-top>.main-nav>.beibei-top-r {
+    float: right;
+    background-color: #F7F7F7;
+}
+
+.beibei-top-r>:first-child {
+    width: 97px;
+    float: left;
+    color: #7F4DBC;
+    background: url(../images/oversea_icon_16x16.png) no-repeat 10px center;
+    border-right: 1px solid #ddd;
+}
+
+.beibei-top-r>:last-child {
+    width: 137px;
+    float: right;
+    color: #FF647C;
+    background: url(../images/f45259dc52970a6ea21d62531e9a96b0.png) no-repeat 30px center;
+}
+
+.sidebar {
+    position: fixed;
+    right: 50px;
+    bottom: 300px;
+    width: 72px;
+    height: 177px;
+    text-align: center;
+    line-height: 44px;
+    height: 44px;
+    z-index: 2000;
+}
+
+.sidebar ul {
+    border: 1px solid #ddd;
+    border-bottom: none;
+    background-color: rgba(236, 229, 229, .5);
+}
+
+.sidebar ul:hover {
+    background-color: rgba(236, 229, 229, 1);
+    cursor: pointer;
+}
+
+.sidebar li {
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.sidebar span {
+    font-size: 25px;
+    color: #FF647C;
+}
+
+.sidebar li:hover {
+    background-color: #FF3F69;
+}
+
+.sidebar li:hover span {
+    color: #fff;
+}
+
+.sidebar li>a {
+    display: block;
+    height: 44px;
+    width: 72px;
+}
+
+.sidebar .right-div {
+    top: -66px;
+    right: 71px;
+    display: none;
+}
+
+.sidebar-f:hover .right-div {
+    display: block;
+}
+
+.sidebar i {
+    color: rgba(255, 0, 0, 0.774);
+    font-weight: bold;
+}
+
+.sidebar-s div {
+    position: absolute;
+    top: -80px;
+    right: 71px;
+    width: 180px;
+    height: 220px;
+    border: 1px solid #FF3F69;
+    background-color: #fff;
+    line-height: 30px;
+    display: none;
+}
+
+.sidebar-s img {
+    width: 150px;
+    height: 150px;
+}
+
+.sidebar-s:hover div {
+    display: block;
+}
+
+.sidebar-t div {
+    width: 72px;
+    height: 50px;
+    position: absolute;
+    background-color: #FF3F69;
+    color: #fff;
+    text-align: center;
+    line-height: 48px;
+    top: -1px;
+    left: -1px;
+    display: none;
+}
+
+.sidebar-t:hover div {
+    display: block;
+}
+
+.sidebar-fo div {
+    width: 72px;
+    height: 50px;
+    position: absolute;
+    background-color: #FF3F69;
+    color: #fff;
+    text-align: center;
+    line-height: 48px;
+    top: -1px;
+    left: -1px;
+    display: none;
+}
+
+.sidebar-fo:hover div {
+    display: block;
+}
+
+.main-z>div {
+    width: 1080px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.main-l {
+    width: 830px;
+    float: left;
+}
+
+.main-title>h3 {
+    font-size: 22px;
+    float: left;
+    color: #666;
+}
+
+.main-title>p {
+    font-size: 20px;
+    float: right;
+    color: #666;
+}
+
+.main-title>span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 5px;
+    height: 5px;
+    background: #666;
+    margin: 0 5px;
+}
+
+.main-title {
+    height: 42px;
+    line-height: 42px;
+    width: 260px;
+}
+
+.commodity {
+    width: 830px;
+}
+
+.commodity:after {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    display: block;
+    content: "";
+}
+
+.commodity div {
+    float: left;
+    width: 251px;
+    height: 336px;
+    background: #fff;
+    margin-right: 21px;
+    border: 1px solid #ededed;
+    margin-bottom: 20px;
+}
+
+.commodity p {
+    font-size: 13px;
+    padding: 10px 0 10px 8px;
+}
+
+.commodity span {
+    color: #ff4965;
+    font-size: 22px;
+    padding-left: 5px;
+}
+
+.commodity .commodity-last {
+    margin-right: 0;
+}
+
+.commodity b {
+    color: #999;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.commodity u {
+    float: right;
+    padding-top: 7px;
+    color: #999;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.main-r {
+    width: 250px;
+    float: right;
+    margin-top: 20px;
+}
+
+.main-r>p {
+    line-height: 30px;
+    padding-left: 25px;
+    background: url(../images/2019-10-07_162615.png) no-repeat left center;
+}
+
+.main-r-list>div {
+    float: left;
+    text-align: center;
+    width: 60px;
+}
+
+.main-r-con>div {
+    display: none;
+}
+
+.main-r-list>div.active-1 {
+    background-color: #f4f4f4;
+}
+
+.main-r-list {
+    height: 30px;
+    line-height: 30px;
+}
+
+.main-r-con img {
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+
+.main-r-con>div>div{
+    padding: 10px;
+    height: 70px;
+}
+
+.main-r-con-i {
+    float: right;
+}
+
+.main-r-con-i p {
+    width: 143px;
+    height: 36px;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+.main-r-con-i span {
+    color: #ff4965;
+    font-size: 16px;
+}
+
+.main-r-con-i i {
+    color: #999;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main:last-child {
+    width: 100%;
+}
+
+main:last-child>img {
+    width: 100%;
 }

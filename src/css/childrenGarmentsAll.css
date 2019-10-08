@@ -129,7 +129,7 @@
 .commodity{
     width: 1080px;
 }
-.commodity:after{
+.commodity:after,.frist::after{
     clear: both;
     height: 0;
     overflow: hidden;
@@ -702,3 +702,4 @@ nav>div {
 .sideBar>ul>:nth-child(3):hover .text2{
     display: block;
 }
+
