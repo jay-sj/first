@@ -1,0 +1,54 @@
+.main-center {
+    margin-bottom: 10px;
+    overflow: hidden;
+    background: #F2F4F6;
+}
+.main-wrap{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20px;
+}
+.main-title{
+    position: relative;
+    height: 70px;
+    background: #fafafa;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #eee;
+    margin: 0 0 10px 0;
+}
+.main-title h1{
+    margin: 0 0 0 30px;
+    line-height: 70px;
+    color: #a7a7a7;
+    text-shadow: 0 -1px 0 #fff;
+    font-size: 24px;
+}
+.logo>div {
+    width: 1200px;
+}
+.footer-nav>div {
+    height: 38px;
+}
+.main-title i{
+    position: absolute;
+    right: 30px;
+    top: 0;
+    background: url(http://b0.hucdn.com/img/trade/cart_merge.png) no-repeat 500px 500px;
+    width: 340px;
+    height: 70px;
+    display: inline-block;
+    background-position: 0 -88px;
+}
+.order_lists cartTop{
+    background: #f3f3f3;
+    color: #555;
+}
+.car{
+    padding: 20px;
+    background: white;
+    padding-bottom: 0px;
+}
+.footer-nav{
+    border-top: 3px solid #FF5482;
+}

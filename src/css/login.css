@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding:0;
+}
+a {
+    text-decoration: none;
+}
+/* 头部 */
+.logo {
+    width: 1080px;
+    margin: 0 auto;
+    overflow:hidden;
+}
+.logo-left {
+    float: left;
+}
+.logo-right {
+    float: right;
+}
+.header{
+    margin-top: 45px;
+    overflow:hidden;
+}
+/* 登录 */
+/* 左侧图片 */
+.main {
+    width: 1080px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 110px 0;
+}
+.banner {
+    padding-left: 50px;
+    float: left;
+}
+/* 右侧登录 */
+.login {
+    width: 400px;
+    color: #666;
+    border: 1px solid #ececec;
+    border-top: 2px solid #ff4965;
+    float: right;
+}
+.login-center {
+    padding: 50px 35px;
+    
+}
+.login-center-title{
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.login-center-title>b{
+    font-weight: bold;
+    font-size: 14px;
+    float: left;
+    color: black;
+}
+.login-center-title>p>a{
+    color: #ff4965;
+    
+}
+.login-center-title >p{
+    float: right;
+    font-size: 12px;
+    color: #666;
+}
+/* 手机号 */
+.label {
+    /* margin-top: 15px; */
+    display: block;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    padding-left: 30px;
+    position: relative;
+}
+.login-phone form {
+    overflow: hidden;
+}
+.label-fl{
+    margin-top: 15px;
+    height: 30px;
+    font-size: 12px;
+    position: relative;
+    float: left;
+}
+.verify {
+    display: block;
+    float: right;
+    height: 30px;
+    margin-top: 15px;
+    font-size: 12px;
+    border: 1px solid #ff4965;
+    color: #ff4965;
+    padding: 0 13px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+}
+.login-phone label input {
+    height: 30px;
+    font-size: 12px;
+    width: 175px;
+    color: #666;
+    line-height: 30px;
+    border: 0;
+    outline: 0;
+    padding: 0 10px;
+    background: 0 0;
+}
+.login-phone>form>label{
+    display: block;
+    border: 1px solid #e6e6e6;
+}
+.small-img {
+    position: absolute;
+    background-image: url(../images/input.jpg);
+    background-repeat: no-repeat;
+    top: 8px;
+    left: 8px;
+    width: 14px;
+    height: 14px;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    border-right: 1px solid #e6e6e6;
+    padding-right:7px; 
+}
+/* 密码 */
+.label-2 {
+    margin-top:15px; 
+}
+.login-pwd input {
+    height: 30px;
+    font-size: 12px;
+    width: 278px;
+    color: #666;
+    line-height: 30px;
+    border: 0;
+    outline: 0;
+    padding: 0 10px;
+    background: 0 0;
+}
+.small-img-2 {
+    position: absolute;
+    background-image: url(../images/input.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px -47px;
+    top: 8px;
+    left: 8px;
+    width: 14px;
+    height: 14px;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    border-right: 1px solid #e6e6e6;
+    padding-right:7px; 
+}
+.small-img-3 {
+    position: absolute;
+    background-image: url(../images/input.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px -33px;
+    top: 8px;
+    left: 8px;
+    width: 14px;
+    height: 14px;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    border-right: 1px solid #e6e6e6;
+    padding-right:7px; 
+}
+/* 验证滑块 */
+#verify-wrap {
+    height: 32px;
+    margin-top:15px; 
+}
+/* 协议 */
+.txt{
+    font-size: 12px;
+    color: #666;
+    margin-top: 15px;
+}
+.txt a{
+    color: #ff4965;
+}
+/* 自动登录 */
+.tip{
+    margin-top: 15px;
+    font-size: 12px;
+    overflow: hidden;
+}
+.check {
+    margin-top: 2px;
+    border: 0;
+    vertical-align: bottom;
+}
+.red {
+    color: #ff4965;
+    float: right;
+}
+/* 注册 */
+.next {
+    display: block;
+    margin-top: 15px;
+    height: 32px;
+    background: #ff4965;
+    text-align: center;
+    line-height: 32px;
+    color: #fff;
+    font-size: 14px;
+}
+.fast {
+    font-size: 12px;
+    margin-top: 15px;
+    line-height: 24px;
+}
+.fast .qq{
+    display: inline-block;
+    width: 25px;
+    height: 24px;
+    background: url(../images/764d876bb3aa326726486d71ee891b66_173x24.png) no-repeat 0 0;
+    vertical-align: bottom;
+    margin: 0 4px;
+}
+.fast .wx{
+    display: inline-block;
+    width: 25px;
+    height: 24px;
+    background: url(../images/764d876bb3aa326726486d71ee891b66_173x24.png) no-repeat -119px 0;
+    vertical-align: bottom;
+}
