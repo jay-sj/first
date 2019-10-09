@@ -33,8 +33,7 @@
                         <form action="">
                             <label for="" class="label">
                                 <span class="small-img"></span>
-                                <input id="username" 
-                                    type="text" class="phone" placeholder="您的手机号 / 邮箱">
+                                <input id="username" type="text" class="phone" placeholder="您的手机号 / 邮箱">
                             </label>
                         </form>
                     </div>
@@ -114,10 +113,22 @@
                 if (name == "123" && pass == "123") {
                     alert("登录成功！");
                     //这里写你页面跳转的语句
-                    window.location.href = "../html/personal.html";
+                    window.location.href = "./personal.html";
                 } else {
                     alert("用户名或密码错误！！");
                 }
+            }
+        }
+
+        document.onkeydown = function (ev) {
+            var e = ev || evert;
+            var code = e.keyCode;
+            // alert(code);    
+            if (code == 13&&document.all["txtForumMobile"].value != "") {
+                // event.keyCode=9;
+                // event.returnValue = false;
+                //这里写你页面跳转的语句
+                window.location.href = "./personal.html";
             }
         }
     </script>
