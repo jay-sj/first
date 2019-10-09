@@ -5,13 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>个人中心</title>
+    <title>设置密码</title>
     <link rel="shortcut icon" type="image/x-icon" href="http://b0.hucdn.com/img/favicon.ico" media="screen">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/HeaderF.css">
     <link rel="stylesheet" href="../iconfont/iconfont.css">
     <link rel="stylesheet" href="../css/personal.css">
     <link rel="stylesheet" href="../iconfont/personal/iconfont.css">
+    <style>
+        .box-fr form {
+            margin: 20px 20px 20px 10px;
+            font-size: 14px;
+        }
+
+        .box-fr form input {
+            border: 1px solid #ccc;
+            box-shadow: inset 0 1px 3px #ddd;
+            border-radius: 2px;
+            padding: .5em .6em;
+        }
+        .pwd-1,.pwd-2 {
+            margin-bottom: 15px;
+        }
+        .box-fr form label {
+            display: inline-block;
+            width: 140px;
+        }
+        .save {
+            margin: 1.5em 0 0 10em;
+        }
+        .save button {
+            padding: 6px 17px;
+    background: #ff4965;
+    border-radius: 2px;
+    color: #fff;
+    border: 1px solid #ff4965;
+    text-shadow: 0 -1px 0 #ff4965;
+    font-size: 13px;
+        }   
+    </style>
 </head>
 
 <body>
@@ -700,7 +732,7 @@
                     <li><a href="">我的收货地址</a></li>
                     <li><a href="">安全中心</a></li>
                     <li><a href="">我的提现</a></li>
-                    <li><a href="">修改密码</a></li>
+                    <li><a href="../html/pwd.html">修改密码</a></li>
                     <li><a href="">账号绑定</a></li>
                     <li><a href="">早教主播后台</a></li>
                 </ul>
@@ -709,65 +741,23 @@
             </div>
             <!-- 右侧内容 -->
             <div class="box-fr">
-                <h3>我的贝贝</h3>
-                <div class="content">
-                    <div class="help">
-                        <span
-                            class="red">贝贝提醒您：</span><span>谨防电话诈骗。任何以贝贝或贝贝品牌入驻商的名义，向您索要账号密码、银行卡等信息的，均为诈骗。凡接到此类电话，请高度警惕并立即报警。</span>
+                <h3>设置密码</h3>
+                <form action="">
+                    <div class="pwd-1">
+                        <label for="">
+                            请输出新密码 *
+                        </label>
+                        <input type="password">
                     </div>
-                    <!-- 欢迎登录 -->
-                    <div class="content-center">
-                        <div class="welcome">
-                            <div class="welcome-head">
-                                <div class="jay"><img src="../images/jay.jpg" alt=""></div>
-                                <span class="ps-le">周杰伦，欢迎您！</span><span class="ps-ri"><a href="">我的收货地址></a></span>
-                            </div>
-                            <div class="welcome-foot">
-                                <span>安全等级</span>
-                                <span class="big-box"><i class="yellow-box"></i></span>
-                                <span class="yellow-txt">中</span>
-                                <span class="blue-txt">&nbsp;提升</span>
-                                <div class="pwd-big">
-                                    <a href="../html/pwd.html" class="pwd">[修改密码]</a>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="my-wallet">
-                            <div class="title1">我的钱包</div>
-                            <div class="title1-right">
-                                <span class="balance">余额：
-                                    <span class="red-txt">5000</span>
-                                    元
-                                </span>
-                                <span><a href="javascript:;" class="extract">提现</a></span>
-                            </div>
-                        </div>
-                        <div class="my-wallet">
-                            <div class="title1">我的贝壳</div>
-                            <div class="title1-right">
-                                <span class="balance">贝壳：
-                                    <span class="red-txt">10</span>
-                                    个
-                                </span>
-                                <span><a href="javascript:;" class="under">详细说明</a></span>
-                            </div>
-                        </div>
-                        <div class="my-wallet my-order">
-                            <div class="title1">我的订单</div>
-                            <div class="title1-right">
-                            </div>
-                        </div>
-                        <div class="date">
-                            <a href="javascript:;"><i class="iconfont icon-hongbao
-                                "></i><span>待付款</span></a>
-                            <a href="javascript:;"><i class="iconfont icon-baozhuanhuan
-                                "></i><span>待发货</span></a>
-                            <a href="javascript:;"><i class="iconfont icon-yisonghuodingdan"></i><span>待收货</span></a>
-                            <a href="javascript:;"><i class="iconfont icon-bijiben"></i><span>待评价</span></a>
-                            <a href="javascript:;"><i class="iconfont icon-fanxian"></i><span>待返现</span></a>
-                        </div>
+                    <div class="pwd-2">
+                        <label for="">
+                            请再次输出新密码 *
+                        </label>
+                        <input type="password">
                     </div>
+                </form>
+                <div class="save">
+                    <button>保存设置</button>
                 </div>
             </div>
         </div>
@@ -852,7 +842,7 @@
                     var scrollT = $(window).scrollTop(); //获取滚轮滚动的距离
                     var halfDoc = $(window).height(); //获取浏览器窗口可视高度
                     var ifElse = (scrollT + halfDoc) >=
-                    $imgTop; //如果滚动距离加上窗口可视高度大于该图片距离document顶部的高度
+                        $imgTop; //如果滚动距离加上窗口可视高度大于该图片距离document顶部的高度
                     var _this = this; //保存this的作用域以便于在其它作用域上使用这个作用域
                     if (ifElse) { //如果条件成立
                         setTimeout(function () {
