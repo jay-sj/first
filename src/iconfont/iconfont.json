@@ -111,18 +111,25 @@
       "unicode_decimal": 58985
     },
     {
+      "icon_id": "626004",
+      "name": "对",
+      "font_class": "icon",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
       "icon_id": "637803",
       "name": "向上箭头",
       "font_class": "xiangshangjiantou",
-      "unicode": "e62f",
-      "unicode_decimal": 58927
+      "unicode": "e630",
+      "unicode_decimal": 58928
     },
     {
       "icon_id": "637804",
       "name": "向下箭头",
       "font_class": "xiangxiajiantou",
-      "unicode": "e630",
-      "unicode_decimal": 58928
+      "unicode": "e631",
+      "unicode_decimal": 58929
     },
     {
       "icon_id": "666879",
@@ -282,8 +289,8 @@
       "icon_id": "2131028",
       "name": "公安",
       "font_class": "gongan",
-      "unicode": "e631",
-      "unicode_decimal": 58929
+      "unicode": "e632",
+      "unicode_decimal": 58930
     },
     {
       "icon_id": "3376390",
@@ -319,6 +326,13 @@
       "font_class": "tubiaozhizuo-",
       "unicode": "e604",
       "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "6364167",
+      "name": "二维码",
+      "font_class": "ico",
+      "unicode": "e648",
+      "unicode_decimal": 58952
     },
     {
       "icon_id": "9059929",
