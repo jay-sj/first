@@ -41,7 +41,17 @@ body {
 .two {
     padding: 30px 0 0 50px;
 }
-
+.two p{
+    line-height: 12px;
+    margin: 10px 0px;
+}
+.two .icon-shoucang{
+    cursor: pointer;
+}
+.two .icon-shoucang:hover{
+    color: red;
+    
+}
 .wai .two img {
     border: 1px solid #ccc;
 }
@@ -162,6 +172,9 @@ h2 .fl {
     font-size: 50px;
     margin: 0px 60px 0px 0px;
 }
+.wrap-head .icon-beike,.wrap-head .icon-64,.wrap-head .icon-huangguan{
+   color: #ff5482;
+}
 
 .price-bq {
     margin-top: 32px;
@@ -225,10 +238,13 @@ h2 .fl {
     vertical-align: middle;
 }
 
-.price-xinxi-img {
+.price-xinxi-img:hover {
     border: 2px solid red;
     padding: 2px;
-    margin-right: 5px;
+    
+}
+.price-xinxi-img{
+    margin-right: 10px;
 }
 
 price-xinxi-z .hui p {
@@ -389,7 +405,7 @@ wrap::after {
     padding: 0px 50px;
 }
 
-.wrap-x h3 {
+.mjkb {
     background: #f2f4f6;
     font-size: 16px;
     line-height: 48px;
