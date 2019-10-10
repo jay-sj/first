@@ -73,6 +73,7 @@
     <script src="../js/jquery.js"></script>
     <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
     <script src="../js/jq-slideVerify.js"></script>
+    <script src="../js/cookie.js"></script>
     <script>
         //滑块
         var SlideVerifyPlug = window.slideVerifyPlug;
@@ -119,7 +120,7 @@
                 }
             }
         }
-
+        setCookie("items",JSON.stringify);
         document.onkeydown = function (ev) {
             var e = ev || evert;
             var code = e.keyCode;

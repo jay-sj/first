@@ -715,13 +715,13 @@
                 <div class="main-r-h fl">
                     <h2 class="r-h fl"><a href="#">
                             <p class="fl">今日特卖</p>
-                            <p class="fr">御泥坊 清爽平衡矿物爽肤乳液120ml 保湿补水控油</p>
+                            <p class="fr pib-title-detail">御泥坊 清爽平衡矿物爽肤乳液120ml 保湿补水控油</p>
                         </a></h2>
                     <p class="fl main-p">【补水睡眠面膜】双重竹林精华，给肌肤需要的水润滋养！非常nice</p>
                     <div class="fl price-b">
 
                         <p>
-                            <span class="fl price-bq">￥</span><span class="price-b-t fl">89.90</span>
+                            <span class="fl price-bq">￥</span><span class="price-b-t fl goodsprice">89.90</span>
                             <span class="price-b-s fl">129.90</span>
                             <p class="zk fl">折扣6折</p>
                             <p class="fl price-b-js">您节省了40.00</p>
@@ -753,7 +753,7 @@
                                         class="num">1</span><button class="jia">+</button>件</p>
                             </li>
                             <div class="price-xinxi-div">
-                                <a href="">
+                                <a href="javascript:;" class="ui-btn-large">
                                     <div class="price-xinxi-red fl">
                                         <span>￥</span><span>89</span><span>.90</span>
                                         <p>单独购买</p>
@@ -1618,6 +1618,35 @@
     <script src="../js/jquery.js"></script>
     <script src="../js/fdj.js"></script>
     <script src="../js/HeaderF.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script> 
+        //加入购物车
+$(function () {
+    var goods = getCookie("goods") ? JSON.parse(getCookie("goods")) : [];
+
+    $(".ui-btn-large").click(function () {
+        // 插入数据
+        // 去重
+        var flag = true;
+        for (var i = 0; i < goods.length; i++) {
+            if (goods[i].goodsName == $(".pib-title-detail").text()) {
+                flag = false;
+            }
+        }
+        if (flag) {
+            var items = {
+                goodsName: $(".pib-title-detail").text(),
+                goodsPrice: $(".goodsprice").text()
+            };
+            goods.push(items);
+            setCookie("goods", JSON.stringify(goods));
+            alert("加入购物车成功");
+        } else {
+            alert("已添加，请勿重复添加");
+        }
+    })
+})
+    </script>
 </body>
 
 </html>
