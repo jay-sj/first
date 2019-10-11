@@ -50,3 +50,6 @@ body{
 .footer-nav{
     border-top: 4px solid #FF647C;
 }
+.logo>div,.logo{
+    background: #fff;
+}
