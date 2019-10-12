@@ -7,7 +7,7 @@
         tthe = $(".the img");
 
     var arr = ["../images/big.jpg", "../images/55883403380000_800x800.jpg!tdmain.jpg", "../images/47230219704505_1000x1000.jpg!tdmain.jpg"];
-    var oarr = ["../images/55879812450000_800x800.jpg!60x60.jpg", "../images/55879812450000_800x800.jpg!60x60.jpg", "../images/55879812450000_800x800.jpg!60x60.jpg"];
+    var oarr = [ "../images/55879812450000_800x800.jpg!60x60.jpg","../images/55879812450000_800x800.jpg!60x60.jpg", "../images/55879812450000_800x800.jpg!60x60.jpg"];
 
     itwo.each(function (i) {
         $(this).click(function () {
