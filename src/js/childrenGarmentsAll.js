@@ -233,6 +233,15 @@
         $(document).trigger("scroll");
     }())
 
+    ; (function () {
+        $(".sidebar-back").click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            },
+                500);
+            return false;
+        });
+    }())
     ;$(function() {
         // 滚动条事件
         $(window).scroll(function(){
@@ -248,7 +257,8 @@
         $(".bannerTops a").click(function(){
             var index = $(this).index();
             $("html,body").animate({
-                scrollTop :$(".dian").eq(index).offset().top 
+                scrollTop :$(".dian").eq(index).offset().top
             },200);
         });
-      }());
+      }())
+      
