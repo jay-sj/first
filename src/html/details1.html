@@ -705,7 +705,7 @@
                         </div>
                     </div>
                     <div class="two">
-                        <img class="active" src="../images/s-smail.jpg" />
+                        <i class="shopp-png2"><img class="active shopp-png" src="../images/s-smail.jpg" /></i>
                         <p><span class="iconfont icon-shoucang"></span> 收藏加购</p>
                     </div>
                 </div>
@@ -1637,7 +1637,7 @@ $(function () {
         if (flag) {
             var items = {
                 goodsName: $(".pib-title-detail").text(),
-                goodsPrice: $(".goodsprice").text()
+                goodsPrice: $(".goodsprice").text(),
             };
             goods.push(items);
             setCookie("goods", JSON.stringify(goods));

@@ -30,8 +30,9 @@
 
         td,
         th {
-            border: 1px solid #333;
+            border: 1px solid #cbcbcb;
             padding: 6px 12px;
+            text-align: center;
         }
 
         #box {
@@ -54,10 +55,33 @@
             color: #fff;
             height: 40px;
             line-height: 40px;
-            margin: 5px;
             text-align: center;
-            
             float: right;
+        }
+        .countNum{
+            display: inline-block;
+            width: 30px;
+            height: 20px;
+            font-size: 15px;
+            background: white;
+            border: 1px solid black;
+            text-align: center;
+        }
+        .reduce,.add{
+            font-size: 15px;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: #cbcbcb;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .subTotal{
+            color: #FF5482;
+        }
+        .total_text{
+            color: #FF5482;
         }
     </style>
 </head>
@@ -147,10 +171,12 @@
             <table id="tb">
                 <thead>
                     <tr>
+                            <th>商品</th>
                         <th>
                             <input type="checkbox" checked class="allCheck">
                             全选
                         </th>
+                        
                         <th>商品名字</th>
                         <th>价格</th>
                         <th>数量</th>
@@ -228,14 +254,15 @@
 
         function fillCart() {
             // 计算 小计
-
             subTotal()
             var str = "";
             for (var i = 0; i < cart.items.length; i++) {
                 str = str + `
         <tr>
+           
+            <td><img class="active" src="../images/s-smail.jpg" /></td>
             <td>
-                <input type="checkbox" ${cart.items[i].isChecked?'checked':''} class="check">
+                <input type="checkbox" ${cart.items[i].isChecked?'checked':''} class="check">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </td>
             <td>${cart.items[i].goodsName}</td>
             <td class="price">￥${cart.items[i].goodsPrice}</td>
